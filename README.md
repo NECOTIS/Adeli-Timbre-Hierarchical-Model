@@ -1,16 +1,15 @@
 # Overview
-This is work is a python implementation of the biologically inspired cochlear filterbank proposed in :
+This is work is a python implementation of the biologically inspired model proposed in :
 
 **A Flexible Bio-inspired Hierarchical Model for Analyzing Musical Timbre**
 by *Adeli, M., Rouat, J., Wood, S., Molotchnikoff, S. and Plourde, E.*
 This implementation was developed by Etienne Richan based on the original Octave code as part of his master's thesis.
 
-This filterbank was designed to extract representations of sounds that representative of musical timbre.
+This model is designed to extract representations of sounds that representative of musical timbre.
 
-The filterbank uses gaussian filters equally spaced on the ERB scale to split a signal into channels multiple channels. 
-Lateral inhibition between neighbouring frequency bands removes redundant spectral information and "sharpens up" the spectral profile.
-The energy in each channel provides a low-resolution representation of the spectral envelope on a perceptual scale.
-A second stage of the filterbank extracts the amplitude modulations in each channel and uses this information to produce a smooth
+The model uses a filterbank gaussian filters equally spaced on the ERB scale to split a signal into multiple channels. 
+Lateral inhibition between neighbouring frequency bands removes redundant spectral information and "sharpens" the spectral profile.
+The second stage of model uses a second filterbank to extract the amplitude modulation in each channel and uses this information to produce a smooth
 temporal envelope as well as a time-varying profile of perceptual roughness.
 
 # The ERB Scale
@@ -27,7 +26,7 @@ We recommend using the ```FullSignalFilterbankWrapper``` class in ```utils/wrapp
 We provide some example uses of the filterbank in the ```example``` folder
 
 ### Feature extraction
-The filterbank can be used to extract features for MIR or machine learning purposes.
+The model can be used to extract features for MIR or machine learning purposes.
 
 The three main features provided by the filterbank are :
 * A perceptually scaled spectral envelope
@@ -40,7 +39,7 @@ Additional features :
 * Envelopes of filterbank channels
 
 
-![Cochleogram](https://github.com/nerrull/ERBlett-Cochlear-Filterbank/raw/master/readme_images/bass_notes.png)
+![Cochleogram](https://github.com/nerrull/Adeli-Timbre-Hierarchical-Model/raw/master/readme_images/bass_notes.png)
 
 *Example first stage output for a series of ascending bass notes*
 
@@ -48,7 +47,7 @@ Additional features :
 ## Multi-channel audio exporting
 ```example/export_filterbank_channels.py```
 
-Each channel output by first stage of the filterbank is a signal containing the isolated spectral content of that ERB band. 
+Each channel output by first stage of the model is a signal containing the isolated spectral content of that ERB band. 
 These channels can be exported to a multi-channel audio file. We recommend using audacity to listen to isolated channels.
 The combined signal will be distorted, due to the overlaping of the ERB band filters.
 
