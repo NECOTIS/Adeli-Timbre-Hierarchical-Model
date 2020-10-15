@@ -19,7 +19,7 @@ In other words, we perceive a 20 hz difference much more easily at 100 Hz than a
 there is a limited resolution to our percetpion of frequencies and a tone at a specific frequency can "mask" our perception of tones at nearby frequencies.
 An ERB band is the range of frequencies around a frequency F the will be masked.
 
-# Using the filterbank
+# Using the model
 We recommend using the ```FullSignalFilterbankWrapper``` class in ```utils/wrapped``` for feature extraction.
 
 # Examples
@@ -71,7 +71,7 @@ It can also be found on [this page](https://www.gel.usherbrooke.ca/rouat/publica
 
 # References and acknowledgements
 
-This work is a reimplementation of the cochlear filterbank by Adeli et al.
+This work is a reimplementation of the timbre model proposed by Adeli et al.
 ```
 @article{adeli_flexible_2016,
 	title = {A {Flexible} {Bio}-{Inspired} {Hierarchical} {Model} for {Analyzing} {Musical} {Timbre}},
