@@ -59,7 +59,7 @@ A simplified form of autocorrelation is performed on each band, and a 2D image i
 and time-delay as the horizontal scale. These frames can be combined into a video, providing a responsive visualisation of 
 spectral content and harmonic structure.
 
-![Stabilized auditory image](https://github.com/NECOTIS/ERBlett-Cochlear-Filterbank/raw/master/readme_images/SAI.gif)
+![Stabilized auditory image](https://github.com/NECOTIS/Adeli-Timbre-Hierarchical-Model/raw/master/readme_images/SAI.gif)
 
 
 # Implementation details
