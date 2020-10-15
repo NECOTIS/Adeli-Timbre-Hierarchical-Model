@@ -7,7 +7,7 @@ This implementation was developed by Etienne Richan based on the original Octave
 
 This model is designed to extract representations of sounds that representative of musical timbre.
 
-The model uses a filterbank gaussian filters equally spaced on the ERB scale to split a signal into multiple channels. 
+The model uses a  gaussian filterbank equally spaced on the ERB scale to split a signal into multiple channels. 
 Lateral inhibition between neighbouring frequency bands removes redundant spectral information and "sharpens" the spectral profile.
 The second stage of model uses a second filterbank to extract the amplitude modulation in each channel and uses this information to produce a smooth
 temporal envelope as well as a time-varying profile of perceptual roughness.
@@ -39,7 +39,7 @@ Additional features :
 * Envelopes of filterbank channels
 
 
-![Cochleogram](https://github.com/nerrull/Adeli-Timbre-Hierarchical-Model/raw/master/readme_images/bass_notes.png)
+![Cochleogram](https://github.com/NECOTIS/Adeli-Timbre-Hierarchical-Model/raw/master/readme_images/bass_notes.png)
 
 *Example first stage output for a series of ascending bass notes*
 
@@ -59,7 +59,7 @@ A simplified form of autocorrelation is performed on each band, and a 2D image i
 and time-delay as the horizontal scale. These frames can be combined into a video, providing a responsive visualisation of 
 spectral content and harmonic structure.
 
-![Stabilized auditory image](https://github.com/nerrull/ERBlett-Cochlear-Filterbank/raw/master/readme_images/SAI.gif)
+![Stabilized auditory image](https://github.com/NECOTIS/ERBlett-Cochlear-Filterbank/raw/master/readme_images/SAI.gif)
 
 
 # Implementation details
